@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="8dp">
+
+    <LinearLayout
+        android:id="@+id/offer_list_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/ic_notifications_black_24dp"
+                android:padding="8dp" />
+
+            <com.growonline.gomobishop.control.FontTextView
+                android:id="@+id/notification_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="16dp"
+                android:text="Shop :"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:visibility="visible"
+                app:fontType="Lato-Light.ttf" />
+
+            <ImageView
+                android:id="@+id/notification_vendor_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+
+        <com.growonline.gomobishop.control.FontTextView
+            android:id="@+id/notification_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:paddingBottom="16dp"
+            android:text="Denims For Summers ! Give Your Wardrobe an Update! Grab the Best Style Now!"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp"
+            android:visibility="visible"
+            app:fontType="Lato-Light.ttf" />
+
+        <com.growonline.gomobishop.control.AspectRatioImageView
+            android:id="@+id/notification_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:heightRatio="0.65" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+

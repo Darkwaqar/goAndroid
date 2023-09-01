@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat">
+
+            <com.growonline.gomobishop.control.FontEditText
+                android:id="@+id/address_first_name"
+                style="@style/AppTheme.EditText"
+                android:hint="@string/hint_first_name"
+                android:inputType="textNoSuggestions|textCapSentences"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat">
+
+            <com.growonline.gomobishop.control.FontEditText
+                android:id="@+id/address_sec_name"
+                style="@style/AppTheme.EditText"
+                android:hint="@string/hint_last_name"
+                android:inputType="textNoSuggestions|textCapSentences"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat">
+
+            <com.growonline.gomobishop.control.FontEditText
+                android:id="@+id/address_email"
+                style="@style/AppTheme.EditText"
+                android:enabled="false"
+                android:focusable="false"
+                android:hint="@string/hint_email"
+                android:inputType="textNoSuggestions|textCapSentences"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat">
+
+            <com.growonline.gomobishop.control.FontEditText
+                android:id="@+id/address_ph"
+                style="@style/AppTheme.EditText"
+                android:hint="@string/hint_phone"
+                android:inputType="textNoSuggestions"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat">
+
+        <com.growonline.gomobishop.control.FontEditText
+            android:id="@+id/address_address"
+            style="@style/AppTheme.EditText"
+            android:hint="@string/hint_street_address"
+            android:inputType="textNoSuggestions|textCapSentences"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/country_dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="0.5">
+
+            <com.growonline.gomobishop.control.FontTextView
+                android:id="@+id/country_txtview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:hint="@string/hint_country"
+                android:lines="1"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:fontType="Lato-Regular.ttf" />
+
+            <ImageView
+                android:id="@+id/country_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/country_txtview"
+                android:background="@color/colorPrimary"
+                android:tint="@color/colorPrimary" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/state_dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="0.5">
+
+            <com.growonline.gomobishop.control.FontTextView
+                android:id="@+id/state_country_txtview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:hint="@string/hint_state"
+                android:lines="1"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:fontType="Lato-Regular.ttf" />
+
+            <ImageView
+                android:id="@+id/state_country_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/state_country_txtview"
+                android:background="@color/colorPrimary"
+                android:tint="@color/colorPrimary" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat">
+
+            <com.growonline.gomobishop.control.FontEditText
+                android:id="@+id/address_city"
+                style="@style/AppTheme.EditText"
+                android:hint="@string/hint_city"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat">
+
+            <com.growonline.gomobishop.control.FontEditText
+                android:id="@+id/address_postal_code"
+                style="@style/AppTheme.EditText"
+                android:hint="@string/hint_zip_code"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/address_button"
+        style="@style/AppTheme.BlackButton"
+        android:text="@string/save" />
+</LinearLayout>

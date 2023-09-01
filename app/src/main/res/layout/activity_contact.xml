@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.growonline.gomobishop.ContactActivity">
+
+    <LinearLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/contactImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:contentDescription="@string/background"
+            android:scaleType="centerCrop" />
+
+        <com.growonline.gomobishop.control.FontTextView
+            android:id="@+id/txt_contact_desc"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="90dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="@string/default_vendor_contact_description"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            app:fontType="Roboto-Light.ttf" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/appointment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <com.growonline.gomobishop.control.AspectRatioImageView
+                android:id="@+id/appointment_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:heightRatio="0.45" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/appointment_name"
+                    style="@style/AppTheme.EditText"
+                    android:inputType="text|textNoSuggestions"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/appointment_email"
+                    style="@style/AppTheme.EditText"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/appointment_phone"
+                    style="@style/AppTheme.EditText"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_event">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/appointment_event"
+                    style="@style/AppTheme.EditText"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_query">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/appointment_query"
+                    style="@style/AppTheme.EditText"
+                    android:lines="3" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/appointment_submit"
+                style="@style/AppTheme.BlackButton"
+                android:text="@string/submit" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/facebook"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/facebook"
+                    android:src="@mipmap/facebook" />
+
+                <ImageView
+                    android:id="@+id/linkedin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/linked_in"
+                    android:src="@mipmap/linkedin" />
+
+                <ImageView
+                    android:id="@+id/twitter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/blogger"
+                    android:src="@mipmap/twitter" />
+
+                <ImageView
+                    android:id="@+id/instagram"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/blogger"
+                    android:src="@mipmap/instagram" />
+
+                <ImageView
+                    android:id="@+id/youtube"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/blogger"
+                    android:src="@mipmap/youtube" />
+
+                <ImageView
+                    android:id="@+id/whatsapp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/blogger"
+                    android:src="@mipmap/whatsapp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/form_contact" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

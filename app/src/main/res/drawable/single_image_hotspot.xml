@@ -1,0 +1,21 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="2"
+            android:useLevel="false">
+            <solid android:color="@android:color/transparent" />
+
+            <stroke
+                android:width="5dp"
+                android:color="#49ffffff" />
+        </shape>
+    </item>
+    <item
+        android:bottom="2dp"
+        android:drawable="@drawable/ic_add_circle_outline_white_24dp"
+        android:left="2dp"
+        android:right="2dp"
+        android:top="2dp" />
+</layer-list>

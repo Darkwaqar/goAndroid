@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_vendor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:paddingStart="16dp"
+            android:textColor="@color/colorPrimary" />
+
+
+    </LinearLayout>
+
+
+    <!--Height will be dynamic according to Aspect-Ratio provided and will always override assigned height 20:9-->
+    <!--<com.growonline.gomobishop.control.AspectRatioImageView-->
+    <!--android:id="@+id/img_vendor"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--app:heightRatio="0.35" />-->
+
+
+</FrameLayout>

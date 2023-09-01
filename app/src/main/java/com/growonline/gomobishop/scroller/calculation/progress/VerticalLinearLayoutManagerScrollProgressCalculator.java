@@ -1,0 +1,51 @@
+package com.growonline.gomobishop.scroller.calculation.progress;
+
+/**
+ * Created by asifrizvi on 8/25/2018.
+ */
+
+
+import android.view.View;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView.ViewHolder;
+
+import com.growonline.gomobishop.scroller.calculation.VerticalScrollBoundsProvider;
+
+/**
+ * Calculates scroll progress for a {@link RecyclerView} with a {@link LinearLayoutManager}
+ */
+public class VerticalLinearLayoutManagerScrollProgressCalculator extends VerticalScrollProgressCalculator {
+
+    public VerticalLinearLayoutManagerScrollProgressCalculator(VerticalScrollBoundsProvider scrollBoundsProvider) {
+        super(scrollBoundsProvider);
+    }
+
+    /**
+     * @param recyclerView recycler that experiences a scroll event
+     * @return the progress through the recycler view list content
+     */
+    @Override
+    public float calculateScrollProgress(RecyclerView recyclerView) {
+        LinearLayoutManager layoutManager = (LinearLayoutManager) recyclerView.getLayoutManager();
+        int lastFullyVisiblePosition = layoutManager.findLastCompletelyVisibleItemPosition();
+
+        View visibleChild = recyclerView.getChildAt(0);
+        if (visibleChild == null) {
+            return 0;
+        }
+        ViewHolder holder = recyclerView.getChildViewHolder(visibleChild);
+        int itemHeight = holder.itemView.getHeight();
+        int recyclerHeight = recyclerView.getHeight();
+        int itemsInWindow = recyclerHeight / itemHeight;
+
+        int numItemsInList = recyclerView.getAdapter().getItemCount();
+        int numScrollableSectionsInList = numItemsInList - itemsInWindow;
+        int indexOfLastFullyVisibleItemInFirstSection = numItemsInList - numScrollableSectionsInList - 1;
+
+        int currentSection = lastFullyVisiblePosition - indexOfLastFullyVisibleItemInFirstSection;
+
+        return (float) currentSection / numScrollableSectionsInList;
+    }
+}

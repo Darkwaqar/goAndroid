@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/banner_RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:msrv_gravity="center"
+                app:msrv_ms_per_inch="@dimen/normal_speed"
+                app:msrv_snap_count="1" />
+
+            <me.relex.circleindicator.CircleIndicator2
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="bottom" />
+
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorAccent" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.growonline.gomobishop.control.multisnaprecyclerview.MultiSnapRecyclerView
+                android:id="@+id/discover_category_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:msrv_gravity="end"
+                app:msrv_ms_per_inch="@dimen/normal_speed"
+                app:msrv_snap_count="1"
+                tools:listitem="@layout/simplecategoryitem" />
+
+            <com.growonline.gomobishop.control.VerticalTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|start"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="bottom|center_horizontal"
+                android:padding="10dp"
+                android:text="Explore Collection"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <com.growonline.gomobishop.control.AspectRatioImageView
+            android:id="@+id/second_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:heightRatio="1.46" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorAccent" />
+
+        <com.growonline.gomobishop.control.AspectRatioImageView
+            android:id="@+id/third_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:heightRatio="1.16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorAccent" />
+
+        <com.growonline.gomobishop.control.AspectRatioImageView
+            android:id="@+id/forth_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:heightRatio="1.46" />
+
+        <!--        <com.growonline.gomobishop.control.AspectRatioImageView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:background="@drawable/footer"-->
+        <!--            android:scaleType="centerCrop"-->
+        <!--            app:heightRatio="0.27" />-->
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

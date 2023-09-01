@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <attr name="fontType" format="string" />
+    <attr name="underline" format="boolean" />
+    <attr name="heightRatio" format="float" />
+
+    <declare-styleable name="AVLoadingIndicatorView">
+        <attr name="minWidth" format="dimension" />
+        <attr name="maxWidth" format="dimension" />
+        <attr name="minHeight" format="dimension" />
+        <attr name="maxHeight" format="dimension" />
+        <attr name="indicatorName" format="string" />
+        <attr name="indicatorColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ParallaxHeightListView">
+        <attr name="minimum_item_height" format="dimension" />
+        <attr name="maximum_item_height" format="dimension" />
+        <attr name="anim_duration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="AspectRatioFrameLayout">
+        <attr name="heightRatio" />
+        <attr name="widthRatio" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="AspectRatioImageView">
+        <attr name="heightRatio" />
+    </declare-styleable>
+
+    <declare-styleable name="FontTextView">
+        <attr name="fontType" />
+        <attr name="underline" />
+    </declare-styleable>
+    <declare-styleable name="FontEditText">
+        <attr name="fontType" />
+        <attr name="underline" />
+    </declare-styleable>
+
+
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+    <declare-styleable name="RangeBar">
+        <attr name="mrb_tickStart" format="float" />
+        <attr name="mrb_tickEnd" format="float" />
+        <attr name="mrb_tickInterval" format="float" />
+        <attr name="mrb_tickHeight" format="dimension" />
+        <attr name="mrb_tickColor" format="color" />
+        <attr name="mrb_barWeight" format="dimension" />
+        <attr name="mrb_rangeBarColor" format="reference|color" />
+        <attr name="mrb_selectorSize" format="dimension" />
+        <attr name="mrb_selectorBoundaryColor" format="reference|color" />
+        <attr name="mrb_selectorBoundarySize" format="dimension" />
+        <attr name="mrb_pinTextColor" format="reference|color" />
+        <attr name="mrb_pinColor" format="reference|color" />
+        <attr name="mrb_pinPadding" format="dimension" />
+        <attr name="mrb_pinMinFont" format="dimension" />
+        <attr name="mrb_pinMaxFont" format="dimension" />
+        <attr name="mrb_rangeBarPaddingBottom" format="dimension" />
+        <attr name="mrb_selectorColor" format="reference|color" />
+        <attr name="mrb_rangeBar" format="boolean" />
+        <attr name="mrb_temporaryPins" format="boolean" />
+        <attr name="mrb_rangeBar_rounded" format="boolean" />
+        <attr name="mrb_connectingLineWeight" format="dimension" />
+        <attr name="mrb_connectingLineColor" format="reference|color" />
+        <attr name="mrb_pinRadius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="NotificationBadge">
+        <attr name="nbTextSize" format="dimension" />
+        <attr name="nbTextColor" format="color" />
+        <attr name="nbBackground" format="reference" />
+        <attr name="nbAnimationEnabled" format="boolean" />
+        <attr name="nbAnimationDuration" format="integer" />
+        <attr name="nbMaxTextLength" format="integer" />
+        <attr name="nbEllipsizeText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="IndexFastScrollRecyclerView">
+        <attr name="setIndexTextSize" format="integer" />
+        <attr name="setIndexbarWidth" format="float" />
+        <attr name="setIndexbarMargin" format="float" />
+        <attr name="setPreviewPadding" format="integer" />
+        <attr name="setPreviewTextSize" format="integer" />
+        <attr name="setPreviewColor" format="color" />
+        <attr name="setPreviewTextColor" format="color" />
+        <attr name="setPreviewTransparentValue" format="float" />
+        <attr name="setIndexBarCornerRadius" format="integer" />
+        <attr name="setIndexBarTransparentValue" format="float" />
+        <attr name="setIndexBarColor" format="string" />
+        <attr name="setIndexBarTextColor" format="string" />
+        <attr name="setIndexBarHighlightTextColor" format="string" />
+        <attr name="setIndexBarColorRes" format="color" />
+        <attr name="setIndexBarTextColorRes" format="color" />
+        <attr name="setIndexBarHighlightTextColorRes" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+        <attr name="civ_fill_color" format="color" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ShimmerLayout">
+        <attr name="shimmer_color" format="color|reference" />
+        <attr name="shimmer_animation_duration" format="integer|reference" />
+        <attr name="shimmer_auto_start" format="boolean|reference" />
+        <attr name="shimmer_angle" format="integer|reference" />
+        <attr name="shimmer_mask_width" format="float|reference" />
+        <attr name="shimmer_gradient_center_color_width" format="float|reference" />
+        <attr name="shimmer_reverse_animation" format="boolean|reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PanoramaImageView">
+        <attr name="piv_enablePanoramaMode" format="boolean" />
+        <attr name="piv_invertScrollDirection" format="boolean" />
+        <attr name="piv_show_scrollbar" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="StepsViewIndicator">
+        <attr name="numOfSteps" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeRevealLayout">
+        <attr name="dragEdge">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+            <flag name="top" value="4" />
+            <flag name="bottom" value="8" />
+        </attr>
+
+        <attr name="mode">
+            <enum name="normal" value="0" />
+            <enum name="same_level"   value="1" />
+        </attr>
+
+        <attr name="flingVelocity" format="integer" />
+
+        <attr name="minDistRequestDisallowParent" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="AvatarView">
+        <attr name="showLabel" format="boolean" />
+        <attr name="avatarSize" format="dimension" />
+        <attr name="avatarSrc" format="reference" />
+        <attr name="labelSrc" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="TriangleLabelView">
+
+        <attr name="backgroundColor" format="color" />
+        <attr name="primaryTextColor" format="color" />
+        <attr name="secondaryTextColor" format="color" />
+
+        <attr name="primaryText" format="string" />
+        <attr name="secondaryText" format="string" />
+
+        <attr name="primaryTextSize" format="dimension" />
+        <attr name="secondaryTextSize" format="dimension" />
+
+        <attr name="labelTopPadding" format="dimension" />
+        <attr name="labelCenterPadding" format="dimension" />
+        <attr name="labelBottomPadding" format="dimension" />
+
+        <attr name="primaryTextStyle">
+            <enum name="normal" value="0" />
+            <enum name="italic" value="1" />
+            <enum name="bold" value="2" />
+        </attr>
+
+        <attr name="secondaryTextStyle">
+            <enum name="normal" value="0" />
+            <enum name="italic" value="1" />
+            <enum name="bold" value="2" />
+        </attr>
+
+        <attr name="corner">
+            <enum name="leftTop" value="1" />
+            <enum name="rightTop" value="2" />
+            <enum name="leftBottom" value="3" />
+            <enum name="rightBottom" value="4" />
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="MultiSnapRecyclerView">
+        <attr name="msrv_gravity" format="enum">
+            <enum name="center" value="0" />
+            <enum name="start" value="1" />
+            <enum name="end" value="2" />
+        </attr>
+        <attr name="msrv_snap_count" format="integer" />
+        <attr name="msrv_ms_per_inch" format="float" />
+    </declare-styleable>
+
+
+    <style name="Widget.MaterialSheetFab.Sheet" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="cardBackgroundColor">#fff</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardMaxElevation">0dp</item>
+        <item name="contentPadding">-3dp</item>
+    </style>
+
+    <style name="TextAppearance.MaterialSheetFab.Sheet.Item" parent="">
+        <item name="android:layout_width">210dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#de000000</item>
+        <item name="android:drawablePadding">24dp</item>
+    </style>
+
+    <style name="Widget.MaterialSheetFab.Fab" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:elevation" tools:ignore="NewApi">4dp</item>
+        <item name="android:src">@drawable/ic_sort_white_24dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="fabSize">normal</item>
+        <item name="borderWidth">0dp</item>
+    </style>
+</resources>

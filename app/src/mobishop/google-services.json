@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "363361383809",
+    "firebase_url": "https://mobishop-let-s-shop-instyle.firebaseio.com",
+    "project_id": "mobishop-let-s-shop-instyle",
+    "storage_bucket": "mobishop-let-s-shop-instyle.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363361383809:android:c54ef22652afdee4",
+        "android_client_info": {
+          "package_name": "com.growonline.gomobishop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363361383809-ushhjrebib45uru0ii1fobkbuulu42tv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.growonline.gomobishop",
+            "certificate_hash": "e623a73520340c5f51791fcda8089a1eb341c47e"
+          }
+        },
+        {
+          "client_id": "363361383809-31rkmt3n7lk60bn0981q8sglpf5u9vgh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9teT81DOhoZpmRwylKQWwXaPItBN4Szk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363361383809-31rkmt3n7lk60bn0981q8sglpf5u9vgh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

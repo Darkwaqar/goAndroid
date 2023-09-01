@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet_form"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="90dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <View
+        android:id="@+id/drp_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:alpha="0"
+        android:background="@drawable/drop_shadow_soft_up" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <com.growonline.gomobishop.control.FontTextView
+            android:id="@+id/btn_contact"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/edit_text_bottom_line"
+            android:gravity="center"
+            android:text="Contact Us"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            app:fontType="Roboto-Bold.ttf" />
+
+
+        <EditText
+            android:id="@+id/activity_contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/edit_text_bottom_line"
+            android:hint="@string/hint_name"
+            android:lines="1"
+            android:nextFocusDown="@+id/activity_contact_email"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColorHint="#AAAAAA"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+
+        <EditText
+            android:id="@+id/activity_contact_email"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/edit_text_bottom_line"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:nextFocusDown="@+id/activity_contact_number"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            android:textAlignment="center"
+            android:textColorHint="#AAAAAA"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/activity_contact_number"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/edit_text_bottom_line"
+            android:hint="@string/hint_number"
+            android:inputType="number"
+            android:lines="1"
+            android:nextFocusDown="@+id/activity_contact_event"
+            android:padding="20dp"
+            android:privateImeOptions="nm"
+            android:textAlignment="center"
+            android:textColorHint="#AAAAAA"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+
+        <EditText
+            android:id="@+id/activity_contact_event"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/edit_text_bottom_line"
+            android:hint="@string/hint_event"
+            android:inputType="textNoSuggestions"
+            android:lines="1"
+            android:nextFocusDown="@+id/activity_contact_query"
+            android:padding="20dp"
+            android:privateImeOptions="nm"
+            android:textAlignment="center"
+            android:textColorHint="#AAAAAA"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+
+        <EditText
+            android:id="@+id/activity_contact_query"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/edit_text_bottom_line"
+            android:hint="@string/hint_query"
+            android:inputType="textNoSuggestions"
+            android:lines="1"
+            android:padding="20dp"
+            android:privateImeOptions="nm"
+            android:textAlignment="center"
+            android:textColorHint="#AAAAAA"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/btn_submit"
+            style="@style/AppTheme.BlackButton"
+            android:text="@string/submit" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <com.growonline.gomobishop.control.AspectRatioFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:heightRatio="0.56">
+
+            <VideoView
+                android:id="@+id/video_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.growonline.gomobishop.control.AspectRatioFrameLayout>
+
+
+        <com.growonline.gomobishop.control.AspectRatioImageView
+            android:id="@+id/first_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:heightRatio="1.87" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorAccent" />
+
+        <com.growonline.gomobishop.control.AspectRatioImageView
+            android:id="@+id/second_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:heightRatio="1.24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.growonline.gomobishop.control.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="Beauty in bloom"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="25sp" />
+
+            <com.growonline.gomobishop.control.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="The gorgeous maxi in pastel tones has been"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <com.growonline.gomobishop.control.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="accentuated with extensively intricate handwork of"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <com.growonline.gomobishop.control.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:paddingBottom="16dp"
+                android:text="pearls, crystals, stones, and sequins"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <com.growonline.gomobishop.control.multisnaprecyclerview.MultiSnapRecyclerView
+                android:id="@+id/discover_category_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                app:msrv_gravity="end"
+                app:msrv_ms_per_inch="@dimen/normal_speed"
+                app:msrv_snap_count="1"
+                tools:listitem="@layout/simplecategoryitem" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+
+        <com.growonline.gomobishop.control.AspectRatioImageView
+            android:id="@+id/third_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:heightRatio="1.54" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorDark"
+            android:gravity="center|center_vertical"
+            android:orientation="vertical">
+
+            <com.growonline.gomobishop.control.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Stay in know"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|center_vertical"
+                android:padding="20dp">
+
+                <com.growonline.gomobishop.control.FontEditText
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="7"
+                    android:background="@drawable/subscribe"
+                    android:hint="Email"
+                    android:padding="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="3"
+                    android:background="@color/colorAccent"
+                    android:text="Submit"
+                    android:textColor="@color/colorPrimary" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|center_vertical"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:src="@mipmap/facebook"
+                    app:tint="@color/colorAccent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:src="@mipmap/twitter"
+                    app:tint="@color/colorAccent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:src="@mipmap/instagram"
+                    app:tint="@color/colorAccent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:src="@mipmap/whatsapp"
+                    app:tint="@color/colorAccent" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_vertical"
+            android:paddingTop="16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/instagram"
+                app:tint="@color/colorAccent" />
+
+            <com.growonline.gomobishop.control.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moazzamkhancouture"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <com.growonline.gomobishop.control.AspectRatioImageView
+            android:id="@+id/forth_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:scaleType="centerCrop"
+            app:heightRatio="0.74" />
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

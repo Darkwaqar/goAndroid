@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@color/colorAccent"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8">
+
+
+        <com.growonline.gomobishop.control.AspectRatioImageView
+            android:id="@+id/img_prd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            app:heightRatio="1.5" />
+
+
+        <LinearLayout
+            android:id="@+id/attribute_info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:orientation="vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/txt_vendor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="vendor"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <com.growonline.gomobishop.control.FontTextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:maxLines="1"
+                android:text="@string/text_title"
+                android:textSize="15sp"
+                app:fontType="Lato-Regular.ttf" />
+
+
+            <TextView
+                android:id="@+id/txt_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="Rs 20000"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <com.growonline.gomobishop.control.FontTextView
+                android:id="@+id/checkout_attributes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:lines="4"
+                android:maxLines="4"
+                android:text="Attributes"
+                android:textSize="15sp"
+                app:fontType="Lato-Regular.ttf" />
+
+
+            <LinearLayout
+                android:id="@+id/Cart_Quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <com.growonline.gomobishop.control.FontTextView
+                    android:id="@+id/lbl_qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/qty"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/btn_minus_item"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:contentDescription="@string/increase_and_decrease_quantity"
+                    android:padding="6dp"
+                    android:paddingBottom="2dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/cart_minuss" />
+
+                <com.growonline.gomobishop.control.FontTextView
+                    android:id="@+id/txt_quantity_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@+id/btn_minus_item"
+                    android:gravity="center"
+                    android:paddingBottom="2dp"
+                    android:text="@string/one"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/btn_plus_item"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/increase_and_decrease_quantity"
+                    android:padding="6dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/cart_pluss" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Cart_Edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_horizontal"
+                    android:background="@android:color/holo_green_dark"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:paddingStart="5dp"
+                    android:text="Edit"
+                    android:textColor="#fff"
+                    android:textSize="8dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/Cart_AddToCart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:background="@color/colorPrimary"
+                    android:drawableTint="@color/colorAccent"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Add To Cart"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="8dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Cart_Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:drawableStart="@drawable/gray_cross"
+            android:drawableLeft="@drawable/gray_cross"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+

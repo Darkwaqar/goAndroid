@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/separater"
+        android:layout_width="@dimen/tabSeparatorWidth"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/tabSeparatorTopMargin"
+        android:layout_marginBottom="@dimen/tabSeparatorBottomMargin"
+        android:background="@color/colorPrimaryDark"
+        android:visibility="gone" />
+
+    <com.growonline.gomobishop.control.FontTextView
+        android:id="@+id/tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/tabTextLeftMargin"
+        android:layout_marginEnd="@dimen/tabTextRightMargin"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/tabTextSize"
+        android:textStyle="bold"
+        app:fontType="Lato-Regular.ttf" />
+
+</LinearLayout>

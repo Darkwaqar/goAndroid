@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="440dp"
+    tools:context="com.growonline.gomobishop.fragment.MiniShoppingCartFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/drp_shadow"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorAccent"
+        android:padding="10dp">
+
+        <com.growonline.gomobishop.control.FontTextView
+            android:id="@+id/lbl_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/shopping_bag"
+            android:textColor="#212121"
+            android:textSize="18sp"
+            app:fontType="Lato-Bold.ttf" />
+
+        <RelativeLayout
+            android:id="@+id/container_cart_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_container"
+            android:layout_below="@+id/lbl_title"
+            android:layout_marginTop="10dp">
+
+            <FrameLayout
+                android:id="@+id/empty_cart_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="75dp"
+                    android:contentDescription="@string/background"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/main_watermark" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/no_product_in_your_cart"
+                        android:textAlignment="center" />
+
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary" />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_cart_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/lbl_total_item"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/lbl_total_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/total_0_item_s"
+                android:textColor="@color/colorPrimary"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/lbl_total_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:text="Calculating.."
+                android:textColor="@color/colorPrimary"
+                android:textSize="11dp" />
+
+
+            <FrameLayout
+                android:id="@+id/pbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_continue"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/black_stroke"
+                android:text="Continue Shopping"
+                android:textAllCaps="false"
+                android:textColor="#757575"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/btn_proceed"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="Proceed to Purchase"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/drp_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.2"
+        android:background="@drawable/drop_shadow_soft" />
+
+</RelativeLayout>

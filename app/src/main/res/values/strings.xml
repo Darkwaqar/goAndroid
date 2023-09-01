@@ -1,0 +1,340 @@
+<resources>
+    <string name="app_name">MobiShop</string>
+    <!--MAIN SCREEN-->
+    <string name="facebook_app_id" translatable="false">116763245656663</string>
+
+    <string name="deafult_search_text">Search Stores</string>
+    <string name="app_title">Shopping</string>
+
+
+    <string name="thankyou_string">Thank you for trusting us! Together with our professional team, we promise to do our very best just to cater every little thing you need.</string>
+
+    <string name="progress_msg">Please wait…!</string>
+    <string name="delete_wishlist_msg">Item has been removed from your wishlist</string>
+    <string name="delete_address_msg">Address has been removed from your Address List</string>
+
+    <string name="activity_sign_up_city">City: %s</string>
+
+    <string name="order_detail">Detail</string>
+
+
+    <string name="order_id">Order # %s</string>
+    <string name="order_date_time">Order Date: %s</string>
+    <string name="order_total">Order Total: %s</string>
+    <string name="order_status">Order Status: %s</string>
+    <string name="order_payment">Payment Method: %s</string>
+    <string name="shipping_method">Shipping Method: %s</string>
+    <string name="shipping_status">Shipping Status: %s</string>
+    <string name="payment_method">Payment Method: %s</string>
+    <string name="payment_status">Payment Status: %s</string>
+    <string name="checkout_pay_desc">PAYMENT METHOD\n\nIn cases where an order is placed, an authorized representative will contact you, personally or over telephone, to confirm the order. After the order is confirmed, it will be processed. Orders once confirmed, cannot be cancelled.</string>
+    <string name="default_vendor_contact_description">
+        If you have any questions or need help with your account, you may Contact Us to assist you.  Customer Service: +00-000-0000000.
+        In Store XX/XX, Main ABC Road , Block XX, Karachi
+    </string>
+    <string name="title_activity_tutorial">ActivityTutorial</string>
+    <string name="permissionDenied">Permission denied to read your External storage and to make phone call</string>
+    <string name="logo">logo</string>
+    <string name="background">BackGround</string>
+    <string name="shopTheLook">Shop the look</string>
+    <string name="callingPhoneNumber">Calling a Phone Number</string>
+    <string name="callfailed">Call failed</string>
+
+    <string name="productAddedToWishlist">Product added to wishlist successfully</string>
+    <string name="successEmailMessage">THANKS FOR SUBMITTING YOUR EMAIL ADDRESS</string>
+    <string name="errorMessageEmailNotFound">Email not found.</string>
+    <string name="successMessageEmailSend">THIS EMAIL HAS BEEN SENT. MIGHT TAKE A COUPLE OF MINUTES TO REACH YOUR ACCOUNT.</string>
+    <string name="provide_your_account_email_and_we_will_send_you_a_link_to_reset_your_password">PROVIDE YOUR ACCOUNT EMAIL AND WE WILL SEND YOU A LINK TO RESET YOUR PASSWORD.</string>
+
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="forgot_password">forgot password?</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="facebook">Facebook</string>
+    <string name="goBack">Go back</string>
+    <string name="close">Close</string>
+    <string name="product_image">Product Image</string>
+    <string name="please_Select">Please select a %s</string>
+    <string name="add_to_cart">ADD TO CART</string>
+    <string name="text_title">Text Title</string>
+    <string name="qty">Qty.</string>
+    <string name="increase_and_decrease_quantity">Increase and Decrease Quantity</string>
+    <string name="one">1</string>
+    <string name="image">Image</string>
+    <string name="title">Title</string>
+    <string name="okay">Okay</string>
+    <string name="invalid_Response_comming_from_server">Invalid response is coming from the server</string>
+    <string name="time_out">Connection timed out..!</string>
+    <string name="no_response">No response received..!</string>
+    <string name="customer_not_found">No customer account found</string>
+    <string name="data_successfully_updated">Your data has been updated successfully…!</string>
+    <string name="submit">Submit</string>
+    <string name="total_zero_items">Total 0 item(s):</string>
+
+    <string name="empty_emailField">Email Field cannot be empty</string>
+
+
+    <string name="newsletter_subscription">NEWSLETTER SUBSCRIPTION</string>
+
+    <string name="no_order_found">No orders found...!</string>
+
+    <string name="product_total">%d Product(s)</string>
+    <string name="shop_the_look">SHOP THE LOOK</string>
+    <string name="follow">FOLLOW</string>
+    <string name="linked_in">Linked In</string>
+    <string name="blogger">blogger</string>
+    <string name="search">Search</string>
+    <string name="no_product_found">No Product Found</string>
+    <string name="shipping_details">Shipping Details</string>
+    <string name="same_as_shipping_detail">Same as Shipping Detail</string>
+    <string name="billing_details">Billing Details</string>
+    <string name="use_my_reward_points">Use my Reward Points</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="discount">Discount</string>
+    <string name="delivery">Delivery</string>
+    <string name="total">Total</string>
+    <string name="by_clicking_quot_confirm_order_quot_you_are_agreeing_to_our">By clicking \"SECURE CHECKOUT\" you are agreeing to our</string>
+    <string name="by_clicking_quot_confirm_order_quot_you_are_agreeing">By continuing you are agreeing to our</string>
+    <string name="terms_amp_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="discount_coupon">Discount / Promo Code</string>
+    <string name="zero_products">0 Product(s)</string>
+    <string name="payable">Total</string>
+    <string name="pkr_00">PKR 00</string>
+    <string name="no_product_in_your_cart">No Product In Your Cart</string>
+    <string name="checkout">Checkout</string>
+    <string name="something_went_wrong">Something went wrong!</string>
+    <string name="go_back">Go Back</string>
+
+    <string name="shopping_bag">Shopping Bag</string>
+    <string name="total_0_item_s">total 0 item(s)</string>
+
+    <string name="view_pager_bottom_sheet_behavior" translatable="false">com.growonline.gomobishop.control.ViewPagerBottomSheetBehavior</string>
+    <string name="rewardPointsBalance">Available Reward Points</string>
+    <string name="rewardPointsAmount">Redeemable Value</string>
+    <string name="minimumRewardPointsToUse">Minimum Reward Points To Use</string>
+    <string name="minimumRewardPointsToUseAmount">Minimum Reward Points To Use Amount</string>
+    <string name="history">History</string>
+    <string name="tax">Tax</string>
+    <string name="no_downloaded_store">No Downloaded Store</string>
+    <string name="error_loading_data">Error Loading Data</string>
+    <string name="please_check_your_connection">Please Check Your Connection</string>
+    <string name="reload">Reload</string>
+    <string name="Apply">Apply</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="loading">Loading</string>
+    <string name="default_notification_channel_id">fcm_default_channel</string>
+
+    <string name="title_change_currency">Change Currency</string>
+    <string name="title_change_language">Change Language</string>
+    <string name="you_may_also_like">You May Also Like</string>
+    <string name="call_for_price">Call For Price</string>
+    <string name="filter">Filter</string>
+
+    <string name="rating_dialog_experience">How was your experience with us?</string>
+    <string name="rating_dialog_maybe_later">Maybe later</string>
+    <string name="rating_dialog_never">Never</string>
+    <string name="rating_dialog_feedback_title">Feedback</string>
+    <string name="rating_dialog_submit">Submit</string>
+    <string name="rating_dialog_cancel">Cancel</string>
+    <string name="rating_dialog_suggestions">Suggest us what went wrong and we\'ll work on it!</string>
+
+    <string name="disclaimer">*Disclaimer: Product color may slightly vary due to photographic lighting sources or display settings. Please follow specific wash care instructions tagged with each item.</string>
+
+    <string name="wishlist_add_to_cart">Item is Added To Shopping Cart</string>
+    <string name="back_in_stock">NOTIFY ME</string>
+    <string name="GO_TO_CART">CHECKOUT</string>
+    <string name="Notify_Me">Notify Me</string>
+    <string name="no_product_review">You haven\'t reviewed any product yet</string>
+    <string name="no_vendor_review">You haven\'t reviewed any vendor yet</string>
+    <string name="Payment_Methods">Payment Methods</string>
+    <string name="Billing_Details">Billing Details</string>
+    <string name="Shipping_Methods">Shipping Methods</string>
+    <string name="shipping">Shipping</string>
+    <string name="Payment">Payment</string>
+
+
+    <string name="secure_checkout">Secure Checkout</string>
+
+    <string name="proceed">Lets Shop</string>
+
+
+    //fixing from here
+    <string name="reward">Reward Point Earn</string>
+    <string name="reward_redeem">Redeemed Reward Point</string>
+    <string name="please_wait_message">Please Wait</string>
+    <string name="skip">Skip</string>
+    <string name="quit">Are you sure you want to quit ?</string>
+    <string name="gender">Gender:</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="remove">REMOVE</string>
+    <string name="cancel">Cancel</string>
+    <string name="update">Update</string>
+    <string name="save">Save</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="availableInPakistan">COD Is Only available in Pakistan</string>
+    <string name="term_and_condition">Term and Condition</string>
+    <string name="product_review">Product Review</string>
+    <string name="vendor_review">Vendor Review</string>
+    <string name="review_text">Review Text</string>
+    <string name="rating">Rating:</string>
+    <string name="add_review">Add Review</string>
+    <string name="empty_query">Query Field cannot be empty</string>
+    <string name="change_password">Change Password</string>
+
+    //invalid
+    <string name="invalid_email">Email is not Valid</string>
+    <string name="invalid_phone">Phone number is not Valid</string>
+    <string name="invalid_coupon_code">coupon code is not Valid</string>
+    <string name="invalid_password">Password is not Valid</string>
+
+
+    //title
+    <string name="title_contact_us">Contact Us</string>
+    <string name="title_product_rating">Product Rating</string>
+    <string name="title_store_rating">Store Rating</string>
+    <string name="title_change_password">Change Password</string>
+    <string name="title_notification">Notification</string>
+    <string name="title_checkout">Checkout</string>
+    <string name="title_order_detail">Order Detail</string>
+    <string name="title_checkout_complete">Checkout Complete</string>
+    <string name="title_wish_list">Wish List</string>
+    <string name="title_address">Addresses</string>
+    <string name="title_address_details">Address Details</string>
+    <string name="title_my_account">My Account</string>
+    <string name="title_order">Order</string>
+    <string name="title_reward">Reward Points</string>
+
+    //hint
+    <string name="hint_number">0300 1234567</string>
+    <string name="hint_event">event?</string>
+    <string name="hint_query">write to us..</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_day">Day</string>
+    <string name="hint_month">Month</string>
+    <string name="hint_year">Year</string>
+    <string name="hint_company">Company</string>
+    <string name="hint_street_address">Street Address</string>
+    <string name="hint_street_address_2">Street Address 2</string>
+    <string name="hint_signature">Signature</string>
+    <string name="hint_zip_code">Zip / Postal Code</string>
+    <string name="hint_city">City</string>
+    <string name="hint_county">Country</string>
+    <string name="hint_country">Country</string>
+    <string name="hint_fax">Fax</string>
+    <string name="hint_state">State / Province</string>
+    <string name="hint_phone">Phone</string>
+    <string name="hint_user_name">Username</string>
+    <string name="hint_new_password">New password</string>
+    <string name="hint_old_password">Old password</string>
+
+
+    <string name="error_match_password">The new password and confirmation password do not match.</string>
+
+    //required
+    <string name="required_product_title">Please add Product Review Title.</string>
+    <string name="required_product_review">Please add Product review.</string>
+    <string name="required_vendor_review_title">Please add Vendor Review Title.</string>
+    <string name="required_vendor_review">Please add Vendor review.</string>
+    <string name="required_old_password">Old password is required</string>
+    <string name="required_new_password">New password is required</string>
+    <string name="required_email">Email is required.</string>
+    <string name="required_name">Name is Required</string>
+    <string name="required_first_name">First Name is Required</string>
+    <string name="required_last_name">Last Name is Required</string>
+    <string name="required_dob">Date of Birth is Required</string>
+    <string name="required_street_address">Street Address is Required</string>
+    <string name="required_street_address_2">Street Address 2 is Required</string>
+    <string name="required_company">Company is Required</string>
+    <string name="required_password_length">The password should have at least 6 characters</string>
+    <string name="required_confirm_password">Confirm Password is required</string>
+    <string name="required_password">Password is required</string>
+    <string name="required_zip_code">Zip/Postal code is required</string>
+    <string name="required_city">City is required</string>
+    <string name="required_county">County is required</string>
+    <string name="required_country">Country is required</string>
+    <string name="required_state">State is required</string>
+    <string name="required_phone">Phone number is required</string>
+    <string name="required_fax">Fax is Required</string>
+    <string name="required_title">Title is required</string>
+    <string name="required_review">Review is required</string>
+    <string name="required_event">Event is required</string>
+    //empty
+    <string name="empty_wishlist_message">No Wishlist item Found</string>
+    <string name="empty_cart_message">No item available in your cart</string>
+    <string name="create_shortcut_title">Create Icon</string>
+    <string name="share_store_title">Share store</string>
+    <string name="all_product_title">Shop</string>
+    <string name="categories_title">Categories</string>
+    <string name="lanuage_updated">Language Updated</string>
+    <string name="currency_updated">Currency Updated</string>
+    <string name="loyality_program">Loyalty Program</string>
+    <string name="profile">Profile</string>
+    <string name="order_history">Order History</string>
+    <string name="login_title">Register / Sign in</string>
+    <string name="logout_title">Sign out</string>
+    <string name="wish_list_title">Wishlist</string>
+    <string name="faq_title">FAQS</string>
+    <string name="follow_title">Follow</string>
+    <string name="contact_title">Contact</string>
+    <string name="how_to_use_title">How to use</string>
+    <string name="about_navigation_title">About Us</string>
+    <string name="subscribe_title">Subscribe</string>
+    <string name="setting_title">Settings</string>
+    <string name="exit_store_title">Exit Store</string>
+    <string name="sales_title">Sale</string>
+    <string name="new_title">Latest</string>
+    <string name="currency_title">Currency</string>
+    <string name="rate_title">Rate our app</string>
+    <string name="feedback_title">Feedback</string>
+    <string name="create_app_title">Create App</string>
+    <string name="notification_title">Notification</string>
+    <string name="road_map_title">Road Map</string>
+    <string name="about_mobishop_tile">Mobishop</string>
+    <string name="review_center_title">Reviews</string>
+    <string name="share_app_title">Share App</string>
+    <string name="my_address_title">Addresses</string>
+    <string name="term_and_condition_title">Term and Conditions</string>
+    <string name="return_and_refund_title">Return and refund</string>
+    <string name="delivery_policy_title">Delivery Policy</string>
+    <string name="shipping_information_title">Shipping Information</string>
+    <string name="return_and_exchange_title">Return and exchange policy</string>
+    <string name="appointment_title">Book an Appointment</string>
+    <string name="chat_title">Chat</string>
+    <string name="more_title">More</string>
+    <string name="language_title">Language</string>
+    <string name="tab_product_review_title">Product Reviews</string>
+    <string name="tab_vendor_review_title">Vendor Reviews</string>
+    <string name="tab_pending_review_title">Pending Reviews</string>
+    <string name="home_tab_title">Trending</string>
+    <string name="collection_tab_title">Home</string>
+    <string name="product_tab_title">Shop</string>
+    <string name="latest_tab_title">Latest</string>
+    <string name="sale_tab_title">Sale</string>
+    <string name="about_tab_title">About</string>
+    <string name="my_account_title">More</string>
+    <string name="featured_vendor_title">Featured</string>
+    <string name="all_vendor_title">All</string>
+    <string name="brand_title">Stores</string>
+    <string name="designer_title">Designers</string>
+    <string name="she_earn_title">SheEarns</string>
+    <string name="my_store_title">My Store</string>
+    <string name="category_title">Home</string>
+    <string name="existing_customer">Existing Customer</string>
+    <string name="new_customer">New Customer</string>
+    <string name="exit_chat">Please click BACK again to exit the Chat</string>
+    <string-array name="language_array">
+        <item>English</item>
+        <item>اردو</item>
+    </string-array>
+    <string-array name="language_local_array">
+        <item>en</item>
+        <item>ur</item>
+    </string-array>
+</resources>

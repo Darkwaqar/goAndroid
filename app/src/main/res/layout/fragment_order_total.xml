@@ -1,0 +1,224 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.growonline.gomobishop.fragment.OrderTotal">
+
+    <LinearLayout
+        android:id="@+id/subtotal_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.growonline.gomobishop.control.FontTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="@string/sub_total"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            app:fontType="HelveticaNeue Medium.ttf" />
+
+        <com.growonline.gomobishop.control.FontTextView
+            android:id="@+id/txt_total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="0.5"
+            android:text="@string/pkr_00"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            app:fontType="HelveticaNeue Medium.ttf" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/discount_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <com.growonline.gomobishop.control.FontTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/discount"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            app:fontType="HelveticaNeue Medium.ttf" />
+
+        <com.growonline.gomobishop.control.FontTextView
+            android:id="@+id/txt_discount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="0.5"
+            android:text="@string/pkr_00"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            app:fontType="HelveticaNeue Medium.ttf" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reward_layout_redeem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <com.growonline.gomobishop.control.FontTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/reward_redeem"
+            android:textSize="14sp"
+            app:fontType="Lato-Light.ttf" />
+
+        <com.growonline.gomobishop.control.FontTextView
+            android:id="@+id/txt_reward_redeem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="0.5"
+            android:text="@string/pkr_00"
+            android:textAlignment="textEnd"
+            android:textSize="14sp"
+            app:fontType="Lato-Light.ttf" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reward_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <com.growonline.gomobishop.control.FontTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/reward"
+            android:textSize="14sp"
+            app:fontType="Lato-Light.ttf" />
+
+        <com.growonline.gomobishop.control.FontTextView
+            android:id="@+id/txt_reward"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="0.5"
+            android:text="@string/pkr_00"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            app:fontType="Lato-Light.ttf" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/delivery_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <com.growonline.gomobishop.control.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="start"
+            android:text="@string/delivery"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            app:fontType="Lato-Light.ttf" />
+
+        <com.growonline.gomobishop.control.FontTextView
+            android:id="@+id/txt_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="end"
+            android:text="@string/pkr_00"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            app:fontType="Lato-Light.ttf" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tax_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <com.growonline.gomobishop.control.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="start"
+            android:text="@string/tax"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            app:fontType="Lato-Light.ttf" />
+
+        <com.growonline.gomobishop.control.FontTextView
+            android:id="@+id/txt_tax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="end"
+            android:text="@string/pkr_00"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            app:fontType="Lato-Light.ttf" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:id="@+id/totalPayable_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <com.growonline.gomobishop.control.FontTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/payable"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            app:fontType="HelveticaNeue Medium.ttf" />
+
+
+        <com.growonline.gomobishop.control.FontTextView
+            android:id="@+id/txt_payable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="0.5"
+            android:text="@string/pkr_00"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            app:fontType="HelveticaNeue Medium.ttf" />
+
+    </LinearLayout>
+
+</LinearLayout>

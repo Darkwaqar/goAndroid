@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "592687855942",
+    "firebase_url": "https://appna-bazar.firebaseio.com",
+    "project_id": "appna-bazar",
+    "storage_bucket": "appna-bazar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592687855942:android:655b76b411a17d03",
+        "android_client_info": {
+          "package_name": "com.growonline.appnabazar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592687855942-hkrjslbtfl3olc2nu7t2b22opkjprk2n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.growonline.appnabazar",
+            "certificate_hash": "e623a73520340c5f51791fcda8089a1eb341c47e"
+          }
+        },
+        {
+          "client_id": "592687855942-81b745fgmo6rp0nj0s08pd1d8u33fjhv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGYKPESL1EoP6n-N-Wje3QjN1ceLM9L98"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592687855942-81b745fgmo6rp0nj0s08pd1d8u33fjhv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

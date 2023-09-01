@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/opc_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:descendantFocusability="blocksDescendants"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/shop_cart_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/checkout_recycler_height" />
+
+        <!--ShippingMethod-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_square_black_border"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <com.growonline.gomobishop.control.AdapterLinearLayout
+                    android:id="@+id/shipping_method_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </com.growonline.gomobishop.control.AdapterLinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorAccent"
+                android:text="@string/Shipping_Methods"
+                android:textColor="#040404"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:translationY="11dp"
+                android:typeface="sans" />
+
+        </RelativeLayout>
+
+        <!-- SHIPPING LOCATION -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_square_black_border"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:id="@+id/shipping_visible_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <FrameLayout
+                        android:id="@+id/shipping_fragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorAccent"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="@string/shipping_details"
+                android:textColor="#040404"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:translationY="11dp"
+                android:typeface="sans" />
+
+
+        </RelativeLayout>
+
+        <!-- BILLING LOCATION -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/add_complete_billing_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_square_black_border"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:id="@+id/billing_visible_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <FrameLayout
+                        android:id="@+id/billing_fragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <!--<include android:id="@+id/billing_fields" layout="@layout/checkout_address"/>-->
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/add_billing_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:button="@drawable/checkout_checkbox_selector"
+                    android:checked="true"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/same_as_shipping_detail"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorAccent"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="@string/Billing_Details"
+                android:textColor="#040404"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:translationY="11dp"
+                android:typeface="sans" />
+
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/chk_reward_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:button="@drawable/checkout_checkbox_selector"
+            android:checked="false"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/use_my_reward_points"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <com.growonline.gomobishop.control.FontTextView
+            android:id="@+id/checkout_pay_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/checkout_pay_desc"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:fontType="Lato-Light.ttf" />
+
+        <!--payment method-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_square_black_border"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <com.growonline.gomobishop.control.AdapterLinearLayout
+                    android:id="@+id/payment_method_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="@string/Payment_Methods"
+                android:textColor="#040404"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:translationY="11dp"
+                android:typeface="sans" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/credit_card_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Card Details"
+                android:textSize="14sp" />
+
+            <com.stripe.android.view.CardInputWidget
+                android:id="@+id/cardInputWidget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!--total layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/white_square_black_border"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <FrameLayout
+                android:id="@+id/total_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp">
+
+            <com.growonline.gomobishop.control.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/by_clicking_quot_confirm_order_quot_you_are_agreeing_to_our"
+                android:textColor="@color/silver"
+                android:textSize="12sp"
+                app:fontType="Lato-Light.ttf" />
+
+            <com.growonline.gomobishop.control.FontTextView
+                android:id="@+id/terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/terms_amp_conditions"
+                android:textColor="@color/mid_blue"
+                android:textSize="14sp"
+                app:fontType="Lato-Light.ttf" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/authentic" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/secure" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/confirm_btn"
+            style="@style/AppTheme.BlackButton"
+            android:text="@string/secure_checkout" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

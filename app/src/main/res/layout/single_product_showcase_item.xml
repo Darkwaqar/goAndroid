@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/single_prd_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/background" />
+
+    <ProgressBar
+        android:id="@+id/single_prd_item_image_loader"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true" />
+
+    <FrameLayout
+        android:id="@+id/frame_layout_hotspots"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.growonline.gomobishop.control.FontTextView
+            android:id="@+id/lbl_hotspot_tooltip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_red"
+            android:paddingBottom="5dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:visibility="invisible"
+            app:fontType="Lato-Regular.ttf" />
+
+    </FrameLayout>
+
+</RelativeLayout>

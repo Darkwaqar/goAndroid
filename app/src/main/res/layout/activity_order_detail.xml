@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context="com.growonline.gomobishop.OrderDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_square_black_border"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/order_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/order_date_time"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/order_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/order_status"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/order_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/order_total"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/order_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorAccent"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="@string/order_id"
+                android:textColor="#040404"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:translationY="11dp"
+                android:typeface="sans" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_square_black_border"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <FrameLayout
+                    android:id="@+id/billing_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorAccent"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="@string/billing_details"
+                android:textColor="#040404"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:translationY="11dp"
+                android:typeface="sans" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_square_black_border"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/payment_method"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/order_payment"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/payment_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/order_status"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorAccent"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="@string/Payment"
+                android:textColor="#040404"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:translationY="11dp"
+                android:typeface="sans" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_square_black_border"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <FrameLayout
+                    android:id="@+id/shipping_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorAccent"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="@string/shipping_details"
+                android:textColor="#040404"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:translationY="11dp"
+                android:typeface="sans" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_square_black_border"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/order_shipping_method"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/shipping_method"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/order_shipping_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/shipping_status"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorAccent"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="@string/shipping"
+                android:textColor="#040404"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:translationY="11dp"
+                android:typeface="sans" />
+
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Order_Items"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            tools:itemCount="1"
+            tools:listitem="@layout/single_shop_cart_item" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_square_black_border"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <LinearLayout
+                    android:id="@+id/subtotal_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.growonline.gomobishop.control.FontTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text="@string/sub_total"
+                        android:textSize="14sp"
+                        app:fontType="HelveticaNeue Medium.ttf" />
+
+                    <com.growonline.gomobishop.control.FontTextView
+                        android:id="@+id/txt_total"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_weight="0.5"
+                        android:text="@string/pkr_00"
+                        android:textAlignment="textEnd"
+                        android:textSize="14sp"
+                        app:fontType="HelveticaNeue Medium.ttf" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/discount_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <com.growonline.gomobishop.control.FontTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="@string/discount"
+                        android:textSize="14sp"
+                        app:fontType="HelveticaNeue Medium.ttf" />
+
+                    <com.growonline.gomobishop.control.FontTextView
+                        android:id="@+id/txt_discount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_weight="0.5"
+                        android:text="@string/pkr_00"
+                        android:textAlignment="textEnd"
+                        android:textSize="14sp"
+                        app:fontType="HelveticaNeue Medium.ttf" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/reward_layout_redeem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <com.growonline.gomobishop.control.FontTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="@string/reward_redeem"
+                        android:textSize="14sp"
+                        app:fontType="Lato-Light.ttf" />
+
+                    <com.growonline.gomobishop.control.FontTextView
+                        android:id="@+id/txt_reward_redeem"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_weight="0.5"
+                        android:text="@string/pkr_00"
+                        android:textAlignment="textEnd"
+                        android:textSize="14sp"
+                        app:fontType="Lato-Light.ttf" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/reward_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <com.growonline.gomobishop.control.FontTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="@string/reward"
+                        android:textSize="14sp"
+                        app:fontType="Lato-Light.ttf" />
+
+                    <com.growonline.gomobishop.control.FontTextView
+                        android:id="@+id/txt_reward"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_weight="0.5"
+                        android:text="@string/pkr_00"
+                        android:textAlignment="textEnd"
+                        android:textSize="14sp"
+                        app:fontType="Lato-Light.ttf" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/totalPayable_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <com.growonline.gomobishop.control.FontTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="@string/payable"
+                        android:textSize="14sp"
+                        app:fontType="HelveticaNeue Medium.ttf" />
+
+
+                    <com.growonline.gomobishop.control.FontTextView
+                        android:id="@+id/txt_payable"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_weight="0.5"
+                        android:text="@string/pkr_00"
+                        android:textAlignment="textEnd"
+                        android:textSize="14sp"
+                        app:fontType="HelveticaNeue Medium.ttf" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorAccent"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="@string/total"
+                android:textColor="#040404"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:translationY="11dp"
+                android:typeface="sans" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context="com.growonline.gomobishop.NotificationActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notification_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="50dp"
+        tools:listitem="@layout/notification_row" />
+
+
+    <LinearLayout
+        android:id="@+id/review_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlackTransparent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <com.growonline.gomobishop.control.AVLoadingIndicatorView
+            style="@style/AVLoadingIndicatorView.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:indicatorColor="@color/colorAccent"
+            app:indicatorName="BallPulseIndicator" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/no_item_found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="75dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/main_watermark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="No Notification Available"
+                android:textAlignment="center" />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:background="@color/highlight_color" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "885308616677",
+    "firebase_url": "https://moazzam-4d55d.firebaseio.com",
+    "project_id": "moazzam-4d55d",
+    "storage_bucket": "moazzam-4d55d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885308616677:android:a4228b43ed16d69b14890c",
+        "android_client_info": {
+          "package_name": "com.growonline.moazzam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885308616677-r0mlngt8ctler2556sdgut0hq79eblsh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.growonline.moazzam",
+            "certificate_hash": "27890ee884bd1bf1483aea5c4b4f61e55628d582"
+          }
+        },
+        {
+          "client_id": "885308616677-rp4hanvlskngpjkq7o2tkreo1vb7bn2b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpCCyfZW3O1_Zj49YMcTtdY-yhzvqoMJY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "885308616677-rp4hanvlskngpjkq7o2tkreo1vb7bn2b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/single_prd_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.growonline.gomobishop.control.AspectRatioImageView
+                android:id="@+id/img_prd"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:heightRatio="1.5" />
+
+            <com.growonline.gomobishop.control.AspectRatioImageView
+                android:id="@+id/productWithHeightRatio1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                app:heightRatio="1" />
+
+
+        </RelativeLayout>
+
+        <com.growonline.gomobishop.control.FontTextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="@string/title"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+
+        <!--Height will be dynamic according to Aspect-Ratio provided and will always override assigned height-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal">
+
+            <com.growonline.gomobishop.control.FontTextView
+                android:id="@+id/txt_price_strike_through"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:paddingEnd="8dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="8dp"
+                android:paddingStart="4dp"
+                android:text="@string/text_title"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <com.growonline.gomobishop.control.FontTextView
+                android:id="@+id/txt_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:text="@string/text_title"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <com.growonline.gomobishop.control.FontTextView
+            android:id="@+id/txt_vendor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="@string/title"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <com.growonline.gomobishop.control.TriangleLabelView
+        android:id="@+id/new_label"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        app:backgroundColor="@color/colorPrimary"
+        app:corner="rightTop"
+        app:labelBottomPadding="10dp"
+        app:labelCenterPadding="0dp"
+        app:labelTopPadding="20dp"
+        app:primaryText="New"
+        app:primaryTextColor="@color/colorAccent"
+        app:primaryTextSize="16sp"
+        app:secondaryTextColor="@color/colorPrimaryDark"
+        app:secondaryTextSize="11sp" />
+
+
+    <com.growonline.gomobishop.control.TriangleLabelView
+        android:id="@+id/sales_label"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        app:backgroundColor="@color/colorPrimary"
+        app:corner="leftTop"
+        app:labelBottomPadding="10dp"
+        app:labelCenterPadding="0dp"
+        app:labelTopPadding="20dp"
+        app:primaryText="Sales"
+        app:primaryTextColor="@color/colorAccent"
+        app:primaryTextSize="16sp"
+        app:secondaryTextColor="@color/colorAccent"
+        app:secondaryTextSize="11sp" />
+
+</RelativeLayout>

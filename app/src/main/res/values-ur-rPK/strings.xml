@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MobiShop</string>
+    <string name="deafult_search_text"> اسٹورز تلاش کریں </string>
+    <string name="app_title"> خریداری </string>
+
+
+    <string name="thankyou_string"> ہم پر اعتماد کرنے کے لیے آپ کا شکریہ! اپنی پیشہ ور ٹیم کے ساتھ مل کر ، ہم وعدہ کرتے ہیں کہ اپنی ہر ممکن چیز کو پورا کرنے کی پوری کوشش کریں گے۔ </string>
+
+    <string name="progress_msg"> براہ کرم انتظار کریں…! </string>
+    <string name="delete_wishlist_msg"> آئٹم آپ کی خواہش کی فہرست سے ہٹا دیا گیا ہے </string>
+    <string name="delete_address_msg"> ایڈریس آپ کی ایڈریس لسٹ سے ہٹا دیا گیا ہے </string>
+
+    <string name="activity_sign_up_city"> شہر:٪ s </string>
+
+    <string name="order_detail"> تفصیل </string>
+
+
+    <string name="order_id"> آرڈر #٪ s </string>
+    <string name="order_date_time"> آرڈر کی تاریخ:٪ s </string>
+    <string name="order_total"> آرڈر کل:٪ s </string>
+    <string name="order_status"> آرڈر کی حیثیت:٪ s </string>
+    <string name="order_payment"> ادائیگی کا طریقہ:٪ s </string>
+    <string name="shipping_method"> ترسیل کا طریقہ:٪ s </string>
+    <string name="shipping_status"> ترسیل کی حیثیت:٪ s </string>
+    <string name="payment_method"> ادائیگی کا طریقہ:٪ s </string>
+    <string name="payment_status"> ادائیگی کی حیثیت:٪ s </string>
+    <string name="checkout_pay_desc"> ادائیگی کا طریقہ آرڈر کی تصدیق کے بعد ، اس پر کارروائی کی جائے گی۔ احکامات کی ایک بار تصدیق ہونے کے بعد اسے منسوخ نہیں کیا جا سکتا۔ </string>
+    <string name="default_vendor_contact_description">
+اگر آپ کے پاس کوئی سوال ہے یا آپ کو اپنے اکاؤنٹ کے بارے میں مدد کی ضرورت ہے تو آپ اپنی مدد کے لیے ہم سے رابطہ کر سکتے ہیں۔ کسٹمر سروس: +00-000-0000000
+ اسٹور XX/XX ، مین اے بی سی روڈ ، بلاک XX ، کراچی میں۔ </string>
+    <string name="title_activity_tutorial"> ActivityTutorial </string>
+    <string name="permissionDenied"> آپ کے بیرونی اسٹوریج کو پڑھنے اور فون کال کرنے کی اجازت سے انکار کر دیا گیا </string>
+    <string name="logo"> لوگو </string>
+    <string name="background"> ​​بیک گراؤنڈ </string>
+    <string name="shopTheLook"> نظر خریدیں </string>
+    <string name="callingPhoneNumber"> فون نمبر پر کال کرنا </string>
+    <string name="callfailed"> کال ناکام </string>
+
+    <string name="productAddedToWishlist"> پروڈکٹ کو خواہش کی فہرست میں کامیابی سے شامل کیا گیا </string>
+
+    <string name="successEmailMessage"> آپ کا ای میل پتہ جمع کرنے کے لیے شکریہ </string>
+    <string name="errorMessageEmailNotFound"> ​​ای میل نہیں ملا۔ </string>
+    <string name="successMessageEmailSend"> یہ ای میل بھیج دیا گیا ہے۔ اپنے اکاؤنٹ تک پہنچنے کے لیے منٹ کا ایک جوڑا لے سکتے ہیں۔ </string>
+    <string name="provide_your_account_email_and_we_will_send_you_a_link_to_reset_your_password"> اپنا اکاؤنٹ ای میل فراہم کریں اور ہم آپ کو اپنا پاس ورڈ دوبارہ حاصل کرنے کے لیے ایک لنک بھیجیں گے۔ </string>
+
+    <string name="password"> پاس ورڈ </string>
+    <string name="sign_in"> سائن ان کریں </string>
+    <string name="forgot_password"> پاس ورڈ بھول گئے؟ </string>
+    <string name="name"> نام </string>
+    <string name="confirm_password"> پاس ورڈ کی تصدیق کریں </string>
+    <string name="register"> رجسٹر کریں </string>
+    <string name="facebook"> فیس بک </string>
+    <string name="goBack"> واپس جائیں </string>
+    <string name="close"> بند </string>
+    <string name="product_image"> پروڈکٹ امیج </string>
+    <string name="please_Select"> براہ کرم ایک٪ s </string>
+    منتخب کریں۔
+    <string name="add_to_cart"> کارٹ میں شامل کریں </string>
+    <string name="text_title"> متن کا عنوان </string>
+    <string name="qty"> مقدار۔ </string>
+    <string name="increase_and_decrease_quantity"> مقدار میں اضافہ اور کمی </string>
+    <string name="one"> 1 </string>
+    <string name="image"> تصویر </string>
+    <string name="title"> عنوان </string>
+    <string name="okay"> ٹھیک ہے </string>
+    <string name="invalid_Response_comming_from_server"> غلط جواب سرور سے آرہا ہے </string>
+    <string name="time_out"> کنکشن کا وقت ختم ہو گیا ..! </string>
+    <string name="no_response"> کوئی جواب موصول نہیں ہوا ..! </string>
+    <string name="customer_not_found"> ​​کوئی کسٹمر اکاؤنٹ نہیں ملا </string>
+    <string name="data_successfully_updated"> آپ کا ڈیٹا کامیابی سے اپ ڈیٹ ہو گیا ہے…! </string>
+    <string name="submit"> جمع کرائیں </string>
+    <string name="total_zero_items"> کل 0 آئٹمز: </string>
+
+    <string name="empty_emailField"> ای میل فیلڈ خالی نہیں ہو سکتا </string>
+
+
+    <string name="newsletter_subscription"> نیوز لیٹر سبسکرپشن </string>
+
+    <string name="no_order_found"> ​​کوئی آرڈر نہیں ملا ...! </string>
+
+    <string name="product_total">٪ d پروڈکٹ </string>
+    <string name="shop_the_look"> دکان خریدیں </string>
+    <string name="follow"> FOLLOW </string>
+    <string name="linked_in"> لنکڈ ان </string>
+    <string name="blogger"> بلاگر </string>
+    <string name="search"> تلاش کریں </string>
+    <string name="no_product_found"> ​​کوئی پروڈکٹ نہیں ملا </string>
+    <string name="shipping_details"> شپنگ کی تفصیلات </string>
+    <string name="same_as_shipping_detail"> شپنگ کی تفصیل جیسا </string>
+    <string name="billing_details"> بلنگ کی تفصیلات </string>
+    <string name="use_my_reward_points"> میرے انعامی پوائنٹس استعمال کریں </string>
+    <string name="sub_total"> ذیلی کل </string>
+    <string name="discount"> چھوٹ </string>
+    <string name="delivery"> ترسیل </string>
+    <string name="total"> کل </string>
+    <string name="by_clicking_quot_confirm_order_quot_you_are_agreeing_to_our"> SE "محفوظ چیک آؤٹ clicking" پر کلک کر کے آپ ہماری </string>
+    سے اتفاق کر رہے ہیں
+    <string name="by_clicking_quot_confirm_order_quot_you_are_agreeing"> جاری رکھ کر آپ ہماری بات سے اتفاق کر رہے ہیں </string>
+    <string name="terms_amp_conditions"> <![CDATA[شرائط و ضوابط]]></string>
+    <string name="discount_coupon"> ڈسکاؤنٹ / پرومو کوڈ </string>
+    <string name="zero_products"> 0 پروڈکٹس </string>
+    <string name="payable"> کل </string>
+    <string name="pkr_00"> PKR 00 </string>
+    <string name="no_product_in_your_cart"> آپ کی ٹوکری میں کوئی پروڈکٹ نہیں </string>
+    <string name="checkout"> چیک آؤٹ </string>
+    <string name="something_went_wrong"> کچھ غلط ہو گیا! </string>
+    <string name="go_back"> واپس جائیں </string>
+
+    <string name="shopping_bag"> شاپنگ بیگ </string>
+    <string name="total_0_item_s"> کل 0 آئٹمز </string>
+
+    <string name="rewardPointsBalance"> دستیاب انعامی پوائنٹس </string>
+    <string name="rewardPointsAmount"> قابل تلافی قدر </string>
+    <string name="minimumRewardPointsToUse"> استعمال کرنے کے لیے کم از کم انعامی پوائنٹس </string>
+    <string name="minimumRewardPointsToUseAmount"> رقم استعمال کرنے کے لیے کم از کم انعامی پوائنٹس </string>
+    <string name="history"> تاریخ </string>
+    <string name="tax"> ٹیکس </string>
+    <string name="no_downloaded_store"> کوئی ڈاؤن لوڈ کردہ اسٹور نہیں </string>
+    <string name="error_loading_data"> ڈیٹا لوڈ کرنے میں خرابی </string>
+    <string name="please_check_your_connection"> براہ کرم اپنا کنکشن چیک کریں </string>
+    <string name="reload"> دوبارہ لوڈ کریں </string>
+    <string name="Apply"> لگائیں </string>
+    <string name="subscribe"> سبسکرائب کریں </string>
+    <string name="loading"> لوڈ ہو رہا ہے </string>
+    <string name="default_notification_channel_id"> fcm_default_channel </string>
+
+    <string name="title_change_currency"> کرنسی تبدیل کریں </string>
+    <string name="title_change_language">زبان تبدیل کریں</string>
+    <string name="you_may_also_like"> آپ بھی پسند کر سکتے ہیں </string>
+    <string name="call_for_price"> قیمت کے لیے کال کریں </string>
+    <string name="filter"> فلٹر </string>
+
+    <string name="rating_dialog_experience"> ہمارے ساتھ آپ کا تجربہ کیسا رہا؟ </string>
+    <string name="rating_dialog_maybe_later"> شاید بعد میں </string>
+    <string name="rating_dialog_never"> کبھی نہیں </string>
+    <string name="rating_dialog_feedback_title"> تاثرات </string>
+    <string name="rating_dialog_submit"> جمع کرائیں </string>
+    <string name="rating_dialog_cancel"> منسوخ کریں </string>
+    <string name="rating_dialog_suggestions"> ہمیں تجویز کریں کہ کیا غلط ہوا اور ہم اس پر کام کریں گے! </string>
+
+    <string name="disclaimer">*ڈس کلیمر: فوٹو گرافی کے لائٹنگ ذرائع یا ڈسپلے سیٹنگ کی وجہ سے پروڈکٹ کا رنگ تھوڑا سا مختلف ہو سکتا ہے۔ براہ کرم ہر آئٹم کے ساتھ ٹیگ کردہ واش کیئر ہدایات پر عمل کریں۔ </string>
+
+    <string name="wishlist_add_to_cart"> آئٹم شاپنگ کارٹ میں شامل کر دیا گیا ہے </string>
+    <string name="back_in_stock"> مجھے اطلاع دیں </string>
+    <string name="GO_TO_CART"> چیک آؤٹ </string>
+    <string name="Notify_Me"> مجھے مطلع کریں </string>
+    <string name="no_product_review"> آپ نے ابھی تک کسی پروڈکٹ کا جائزہ نہیں لیا </string>
+    <string name="no_vendor_review"> آپ نے ابھی تک کسی بھی دکاندار کا جائزہ نہیں لیا </string>
+    <string name="Payment_Methods"> ادائیگی کے طریقے </string>
+    <string name="Billing_Details"> بلنگ کی تفصیلات </string>
+    <string name="Shipping_Methods"> ترسیل کے طریقے </string>
+    <string name="shipping"> شپنگ </string>
+    <string name="Payment"> ادائیگی </string>
+
+
+    <string name="secure_checkout"> محفوظ چیک آؤٹ </string>
+
+    <string name="proceed"> خریداری کرنے دیں </string>
+
+
+    // یہاں سے ٹھیک کرنا۔
+    <string name="reward"> انعامی پوائنٹ کمائیں </string>
+    <string name="reward_redeem"> انعام شدہ انعام کا مقام </string>
+    <string name="please_wait_message"> براہ کرم انتظار کریں </string>
+    <string name="skip"> چھوڑیں </string>
+    <string name="quit"> کیا آپ واقعی چھوڑنا چاہتے ہیں؟ </string>
+    <string name="gender"> جنس: </string>
+    <string name="male"> مرد </string>
+    <string name="female"> خاتون </string>
+    <string name="remove"> ہٹائیں </string>
+    <string name="cancel"> منسوخ کریں </string>
+    <string name="update"> اپ ڈیٹ </string>
+    <string name="save"> محفوظ کریں </string>
+    <string name="edit"> ترمیم کریں </string>
+    <string name="delete"> حذف کریں </string>
+    <string name="availableInPakistan"> COD صرف پاکستان میں دستیاب ہے </string>
+    <string name="term_and_condition"> ٹرم اور کنڈیشن </string>
+    <string name="product_review"> پروڈکٹ ریویو </string>
+    <string name="vendor_review"> وینڈر ریویو </string>
+    <string name="review_text"> متن کا جائزہ لیں </string>
+    <string name="rating"> درجہ بندی: </string>
+    <string name="add_review"> جائزہ شامل کریں </string>
+    <string name="empty_query"> استفسار فیلڈ خالی نہیں ہو سکتا </string>
+    <string name="change_password"> پاس ورڈ تبدیل کریں </string>
+
+    // ناجائز
+    <string name="invalid_email"> ای میل درست نہیں ہے </string>
+    <string name="invalid_phone"> فون نمبر درست نہیں ہے </string>
+    <string name="invalid_coupon_code"> کوپن کوڈ درست نہیں ہے </string>
+    <string name="invalid_password"> پاس ورڈ درست نہیں ہے </string>
+
+
+    // عنوان۔
+    <string name="title_contact_us"> ہم سے رابطہ کریں </string>
+    <string name="title_product_rating"> پروڈکٹ کی درجہ بندی </string>
+    <string name="title_store_rating"> اسٹور کی درجہ بندی </string>
+    <string name="title_change_password"> پاس ورڈ تبدیل کریں </string>
+    <string name="title_notification"> اطلاع </string>
+    <string name="title_checkout"> چیک آؤٹ </string>
+    <string name="title_order_detail"> آرڈر کی تفصیل </string>
+    <string name="title_checkout_complete"> چیک آؤٹ مکمل </string>
+    <string name="title_wish_list"> خواہش کی فہرست </string>
+    <string name="title_address"> پتے </string>
+    <string name="title_address_details"> ایڈریس کی تفصیلات </string>
+    <string name="title_my_account"> میرا اکاؤنٹ </string>
+    <string name="title_order"> آرڈر </string>
+    <string name="title_reward"> انعامی پوائنٹس </string>
+
+    // اشارہ
+    <string name="hint_number"> 0300 1234567 </string>
+    <string name="hint_event"> ایونٹ؟ </string>
+    <string name="hint_query"> ہمیں لکھیں .. </string>
+    <string name="hint_name"> نام </string>
+    <string name="hint_first_name"> پہلا نام </string>
+    <string name="hint_last_name"> آخری نام </string>
+    <string name="hint_email"> ای میل </string>
+    <string name="hint_day"> دن </string>
+    <string name="hint_month"> مہینہ </string>
+    <string name="hint_year"> سال </string>
+    <string name="hint_company"> کمپنی </string>
+    <string name="hint_street_address"> گلی کا پتہ </string>
+    <string name="hint_street_address_2"> گلی کا پتہ 2 </string>
+    <string name="hint_signature"> دستخط </string>
+    <string name="hint_zip_code"> زپ / پوسٹل کوڈ </string>
+    <string name="hint_city"> شہر </string>
+    <string name="hint_county"> ملک </string>
+    <string name="hint_country"> ملک </string>
+    <string name="hint_fax"> فیکس </string>
+    <string name="hint_state"> ریاست / صوبہ </string>
+    <string name="hint_phone"> فون </string>
+    <string name="hint_user_name"> صارف نام </string>
+    <string name="hint_new_password"> نیا پاس ورڈ </string>
+    <string name="hint_old_password"> پرانا پاس ورڈ </string>
+
+
+    <string name="error_match_password"> نیا پاس ورڈ اور تصدیق کا پاس ورڈ مماثل نہیں ہے۔ </string>
+
+    // ضرورت ہے
+    <string name="required_product_title"> براہ کرم پروڈکٹ ریویو کا عنوان شامل کریں۔ </string>
+    <string name="required_product_review"> براہ کرم پروڈکٹ کا جائزہ شامل کریں۔ </string>
+    <string name="required_vendor_review_title"> براہ کرم وینڈر ریویو ٹائٹل شامل کریں۔ </string>
+    <string name="required_vendor_review"> براہ کرم وینڈر ریویو شامل کریں۔ </string>
+    <string name="required_old_password"> پرانا پاس ورڈ درکار ہے </string>
+    <string name="required_new_password"> نیا پاس ورڈ درکار ہے </string>
+    <string name="required_email"> ای میل درکار ہے۔ </string>
+    <string name="required_name"> نام درکار ہے </string>
+    <string name="required_first_name"> پہلا نام درکار ہے </string>
+    <string name="required_last_name"> آخری نام درکار ہے </string>
+    <string name="required_dob"> تاریخ پیدائش درکار ہے </string>
+    <string name="required_street_address"> گلی کا پتہ درکار ہے </string>
+    <string name="required_street_address_2"> گلی کا پتہ 2 درکار ہے </string>
+    <string name="required_company"> کمپنی درکار ہے </string>
+    <string name="required_password_length"> پاس ورڈ میں کم از کم 6 حروف ہونے چاہئیں </string>
+    <string name="required_confirm_password"> پاس ورڈ کی تصدیق ضروری ہے </string>
+    <string name="required_password"> پاس ورڈ درکار ہے </string>
+    <string name="required_zip_code"> زپ/پوسٹل کوڈ درکار ہے </string>
+    <string name="required_city"> شہر درکار ہے </string>
+    <string name="required_county"> کاؤنٹی درکار ہے </string>
+    <string name="required_country"> ملک درکار ہے </string>
+    <string name="required_state"> ریاست درکار ہے </string>
+    <string name="required_phone"> فون نمبر درکار ہے </string>
+    <string name="required_fax"> فیکس درکار ہے </string>
+    <string name="required_title"> عنوان درکار ہے </string>
+    <string name="required_review"> جائزہ درکار ہے </string>
+    <string name="required_event"> ایونٹ درکار ہے </string>
+    // خالی
+    <string name="empty_wishlist_message"> کوئی خواہش کی فہرست نہیں ملی </string>
+    <string name="empty_cart_message"> آپ کی کارٹ میں کوئی آئٹم دستیاب نہیں ہے </string>
+    <string name="create_shortcut_title"> آئیکن بنائیں </string>
+    <string name="share_store_title"> اسٹور شیئر کریں </string>
+    <string name="all_product_title"> خریداری </string>
+    <string name="categories_title"> زمرہ جات </string>
+    <string name="lanuage_updated"> زبان اپ ڈیٹ </string>
+    <string name="currency_updated"> کرنسی اپ ڈیٹ </string>
+    <string name="loyality_program"> وفاداری پروگرام </string>
+    <string name="profile"> پروفائل </string>
+    <string name="order_history"> آرڈر کی تاریخ </string>
+    <string name="login_title"> رجسٹر / سائن ان کریں </string>
+    <string name="logout_title"> سائن آؤٹ کریں </string>
+    <string name="wish_list_title"> خواہش کی فہرست </string>
+    <string name="faq_title"> سوالات </string>
+    <string name="follow_title"> پیروی کریں </string>
+    <string name="contact_title"> رابطہ </string>
+    <string name="how_to_use_title"> کیسے استعمال کریں </string>۔
+    <string name="about_navigation_title"> ہمارے بارے میں </string>
+    <string name="subscribe_title"> سبسکرائب کریں </string>۔
+    <string name="setting_title"> ترتیبات </string>۔
+    <string name="exit_store_title"> اسٹور سے باہر نکلیں </string>۔
+    <string name="sales_title"> فروخت </string>
+    <string name="new_title"> تازہ ترین </string>
+    <string name="currency_title"> کرنسی </string>
+    <string name="rate_title"> ہماری ایپ کی درجہ بندی کریں </string>
+    <string name="feedback_title"> تاثرات </string>
+    <string name="create_app_title"> ایپ بنائیں </string>
+    <string name="notification_title"> اطلاع </string>
+    <string name="road_map_title"> روڈ میپ </string>
+    <string name="about_mobishop_tile"> موبی شاپ </string>
+    <string name="review_center_title"> جائزے </string>
+    <string name="share_app_title"> ایپ شیئر کریں </string>۔
+    <string name="my_address_title"> پتے </string>۔
+    <string name="term_and_condition_title"> اصطلاحات اور شرائط </string>۔
+    <string name="return_and_refund_title"> واپسی اور رقم کی واپسی </string>۔
+    <string name="delivery_policy_title"> ڈیلیوری پالیسی </string>۔
+    <string name="shipping_information_title"> ترسیل کی معلومات </string>۔
+    <string name="return_and_exchange_title"> واپسی اور تبادلے کی پالیسی </string>۔
+    <string name="appointment_title">اپائنٹمنٹ بک کروائیں۔ </string>۔
+    <string name="chat_title"> چیٹ </string>۔
+    <string name="more_title"> مزید </string>۔
+    <string name="language_title"> زبان </string>۔
+    <string name="tab_product_review_title"> پروڈکٹ ریویو </string>
+    <string name="tab_vendor_review_title"> وینڈر کے جائزے </string>
+    <string name="tab_pending_review_title"> زیر التواء جائزے </string>
+    <string name="home_tab_title"> ٹرینڈنگ </string>
+    <string name="collection_tab_title"> گھر </string>
+    <string name="product_tab_title"> خریداری کریں </string>
+    <string name="latest_tab_title"> تازہ ترین </string>
+    <string name="sale_tab_title"> فروخت </string>
+    <string name="about_tab_title"> کے بارے میں </string>
+    <string name="my_account_title"> مزید </string>
+    <string name="featured_vendor_title"> نمایاں </string>
+    <string name="all_vendor_title"> سبھی </string>
+    <string name="brand_title"> اسٹورز </string>
+    <string name="designer_title"> ڈیزائنرز </string>
+    <string name="she_earn_title"> SheEarns </string>
+    <string name="my_store_title"> میرا اسٹور </string>
+    <string name="category_title"> گھر </string>
+    <string name="existing_customer">موجودہ گاہک</string>
+    <string name="new_customer">نیا گاہک</string>
+</resources>

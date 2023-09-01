@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/base_toolbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:orientation="vertical"
+    app:contentInsetEnd="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetStart="0dp"
+    app:layout_scrollFlags="scroll|enterAlways|snap">
+
+
+    <LinearLayout
+        android:id="@+id/toolbar_custom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/toolbar_left_nav_imageview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:padding="11dp"
+            android:scaleType="center"
+            tools:tint="@color/colorAccent"
+            android:src="@drawable/ic_menu_white"
+            android:visibility="visible" />
+
+
+        <LinearLayout
+            android:id="@+id/title_store_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.growonline.gomobishop.control.FontTextView
+                android:id="@+id/toolbar_title_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Title"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                app:fontType="Lato-Bold.ttf" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/icon_minimize"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                tools:tint="@color/colorAccent"
+                android:src="@drawable/ic_minimize" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_shopCart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15">
+
+            <ImageView
+                android:id="@+id/ico_shopCart"
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                tools:tint="@color/colorAccent"
+                android:src="@drawable/ic_shopping_cart" />
+
+            <com.growonline.gomobishop.fragment.NotificationBadge
+                android:id="@+id/base_toolbar_badge"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                app:nbBackground="@drawable/badge_bg_with_shadow"
+                app:nbMaxTextLength="2" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>

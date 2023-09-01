@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context="com.growonline.gomobishop.fragment.ProductListingFragment">
+
+
+    <com.growonline.gomobishop.alphabetsindexfastscrollrecycler.IndexFastScrollRecyclerView
+        android:id="@+id/recycler_view_featured_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:scrollbars="none" />
+
+    <include
+        android:id="@+id/network_error"
+        layout="@layout/network_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" />
+</RelativeLayout>
+

@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.growonline.gomobishop.fragment.FollowDialog">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#f1f1f1"
+        android:gravity="center"
+        android:text="@string/follow"
+        android:textColor="#212121"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/facebook"
+            android:src="@mipmap/facebook" />
+
+        <ImageView
+            android:id="@+id/linkedin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/linked_in"
+            android:src="@mipmap/linkedin" />
+
+        <ImageView
+            android:id="@+id/twitter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/blogger"
+            android:src="@mipmap/twitter" />
+
+        <ImageView
+            android:id="@+id/instagram"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/blogger"
+            android:src="@mipmap/instagram" />
+
+        <ImageView
+            android:id="@+id/youtube"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/blogger"
+            android:src="@mipmap/youtube" />
+
+        <ImageView
+            android:id="@+id/whatsapp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/blogger"
+            android:src="@mipmap/whatsapp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

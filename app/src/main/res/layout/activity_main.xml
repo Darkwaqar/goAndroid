@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.growonline.gomobishop.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/top_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Toolbar"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:id="@+id/btn_search"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_search_border">
+
+                <TextView
+                    android:id="@+id/lbl_search_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/deafult_search_text"
+                    android:textColor="@color/colorSepGray"
+                    android:textSize="@dimen/action_bar_font_size_search_store_screen" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_search_white_36dp" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/offer_RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:msrv_gravity="center"
+                app:msrv_ms_per_inch="@dimen/low_speed"
+                app:msrv_snap_count="1" />
+
+            <me.relex.circleindicator.CircleIndicator2
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="bottom" />
+        </FrameLayout>
+
+        <include
+            android:id="@+id/network_error"
+            layout="@layout/network_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/dashboard_bottomsSheet"
+        layout="@layout/fragment_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:behavior_peekHeight="300dp"
+        app:layout_behavior="@string/view_pager_bottom_sheet_behavior"
+        tools:behavior_hideable="false" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

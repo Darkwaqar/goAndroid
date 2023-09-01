@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:orientation="horizontal">
+
+    <RatingBar
+        android:id="@+id/rating_stars"
+        style="@android:style/Widget.DeviceDefault.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:max="5"
+        android:rating="5"
+        android:theme="@style/RatingBar"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp"
+        app:theme="@style/RatingBar" />
+
+    <ProgressBar
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:id="@+id/rating_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_weight="0.3"
+        android:indeterminateOnly="false" />
+
+    <TextView
+        android:id="@+id/rating_total"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+         />
+</LinearLayout>
+

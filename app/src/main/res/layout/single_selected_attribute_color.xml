@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:layout_marginTop="20dp"
+    android:background="#f5f5f5"
+    android:gravity="center"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/lbl_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:minWidth="75dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="2dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/lbl_selected_value"
+        android:background="#c2c3c6" />
+
+
+    <!--<com.digitrends.celebrityapp.control.AttributeColorSelector
+        android:id="@+id/lbl_selected_value"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:SelectorColor="@color/colorAccent"/>-->
+
+    <View
+        android:id="@+id/lbl_selected_value"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/colorAccent"
+        android:minWidth="24dp" />
+
+</RelativeLayout>

@@ -1,0 +1,290 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.growonline.gomobishop.fragment.ProductListingFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_products"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:clipToPadding="false"
+        android:paddingTop="48dp"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <View
+        android:id="@+id/disableView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#64000000"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/network_error"
+        layout="@layout/network_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" />
+
+
+    <FrameLayout
+        android:id="@+id/img_no_prod_found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/recycler_view_filters_container"
+        android:background="@color/colorAccent"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="75dp"
+            android:contentDescription="@string/image"
+            android:scaleType="centerInside"
+            android:src="@drawable/main_watermark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/message_no_product_found"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/no_product_found"
+                android:textAlignment="center" />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/recycler_view_filters_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A8A8A8"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_filters"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/filter_bar_size"
+            android:layout_gravity="center_horizontal" />
+
+        <View
+            android:id="@+id/decorator_top"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/popup_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-11dp"
+            android:background="@drawable/triangle_down"
+            android:rotation="180"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/dialog_filter_option"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:background="@color/colorAccent"
+            android:visibility="gone">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_filter_option"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:paddingBottom="46dp"
+                android:scrollbars="vertical" />
+
+            <LinearLayout
+                android:id="@+id/btn_filter_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary" />
+
+                <Button
+                    android:id="@+id/btn_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:background="@color/colorPrimary"
+                    android:drawableTop="@drawable/black_line"
+                    android:text="@string/filter"
+                    android:textColor="@color/colorAccent" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/btn_search_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="9dp"
+        android:background="@color/colorAccent"
+        android:foreground="@drawable/button_search_border"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/txt_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_border"
+            android:drawableEnd="@drawable/search_ico"
+            android:ems="16"
+            android:hint="Search"
+            android:imeOptions="actionSearch"
+
+            android:inputType="text"
+            android:paddingBottom="10dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/btn_cancel_filter_dialog"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/round_bg"
+        android:contentDescription="@string/cancel"
+        android:elevation="6dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_clear_24dp"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true" />
+
+
+    <!-- Your FAB implementation -->
+    <com.growonline.gomobishop.base.Fab
+        android:id="@+id/fab"
+        style="@style/Widget.MaterialSheetFab.Fab"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        app:backgroundTint="@color/colorPrimary" />
+
+    <!-- Overlay that dims the screen -->
+    <com.gordonwong.materialsheetfab.DimOverlayFrameLayout
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Circular reveal container for the sheet -->
+    <io.codetail.widget.RevealLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end|bottom"
+        android:orientation="vertical">
+
+        <!-- Sheet that contains your items -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fab_sheet"
+            style="@style/Widget.MaterialSheetFab.Sheet">
+
+            <!-- Sheet items -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Recording -->
+                <TextView
+                    android:id="@+id/fab_sheet_item_Position"
+                    style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Position (display order)" />
+
+                <!-- Reminder -->
+                <TextView
+                    android:id="@+id/fab_sheet_item_NameAsc"
+                    style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
+                    android:text="Name: A to Z" />
+
+                <!-- Photo -->
+                <TextView
+                    android:id="@+id/fab_sheet_item_NameDesc"
+                    style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
+                    android:text="Name: Z to A" />
+
+                <TextView
+                    android:id="@+id/fab_sheet_item_PriceAsc"
+                    style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
+                    android:text="Price: Low to High" />
+
+                <TextView
+                    android:id="@+id/fab_sheet_item_PriceDesc"
+                    style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
+                    android:text="Price: High to Low" />
+
+                <TextView
+                    android:id="@+id/fab_sheet_item_CreatedOn"
+                    style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
+                    android:text="Product Creation Date" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </io.codetail.widget.RevealLinearLayout>
+
+</RelativeLayout>

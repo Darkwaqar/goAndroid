@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1027980547871",
+    "firebase_url": "https://sadaf-amir-981d3.firebaseio.com",
+    "project_id": "sadaf-amir-981d3",
+    "storage_bucket": "sadaf-amir-981d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027980547871:android:c02f5428beb1a5ff",
+        "android_client_info": {
+          "package_name": "com.growonline.sadaf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027980547871-rimkl6psf18pj9tlme0tsjlrlojf0i36.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQE-UzvZbX2QLomtMaUVaNIBa5TMZJdus"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027980547871-rimkl6psf18pj9tlme0tsjlrlojf0i36.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

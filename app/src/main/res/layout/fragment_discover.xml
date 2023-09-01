@@ -1,0 +1,7 @@
+<com.growonline.gomobishop.control.SwipeableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_discover_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.growonline.gomobishop.fragment.DiscoverFragment" />
